@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+  int n,k,j,p,c;
+  k=(2^n-2);
+  j=k%n;
+  
+  
+  
+    return 0;
+}
+
