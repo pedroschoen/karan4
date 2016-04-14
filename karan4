@@ -1,13 +1,36 @@
 #include <stdio.h>
-
+#include <math.h>
 int main()
-{
-  int n,k,j,p,c;
-  k=(2^n-2);
-  j=k%n;
-  
-  
-  
-    return 0;
-}
+    {
+int n,k,j,p,c,h,s;
+printf("What is the number you want prime factored?");
+scanf("%d",&n);
+j=2;
+while (j<n)
+    {
+s=pow(2,j);
+k=(s-2);
+p=k%j;
 
+if (p==0)
+    {
+  for(c=2;c<=j-1;c++)
+    {
+    h=j%c;
+    if (h==0)
+        {
+            break;
+        }
+
+
+    }
+    if ((c==j)&&(n%j==0))
+    {
+        printf("%d\n",j);
+    }
+    }
+j=j+1;
+    }
+
+    return 0;
+    }
