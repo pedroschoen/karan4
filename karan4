@@ -6,13 +6,9 @@ int n,k,j,p,c,h,s;
 printf("What is the number you want prime factored?");
 scanf("%d",&n);
 j=2;
-while (j<n)
+while (j<=n)
     {
-s=pow(2,j);
-k=(s-2);
-p=k%j;
-
-if (p==0)
+if (j%2!=0)
     {
   for(c=2;c<=j-1;c++)
     {
@@ -28,7 +24,7 @@ if (p==0)
     {
         printf("%d\n",j);
     }
-    }
+}
 j=j+1;
     }
 
